@@ -8,7 +8,7 @@ Qwen2.5-0.5B의 어휘 3만 개를 한국어 토큰으로 바꿨습니다. 같�
 
 코퍼스 정제, tokenizer·embedding surgery, CPT, 평가를 RTX 5070 Ti 한 장에서 직접 했습니다. 실패한 run도 지우지 않고 결과표의 숫자마다 설정과 로그를 연결해 두었습니다.
 
-다음에 확인할 것: 회복률이 65% 근처에서 멈추는 이유가 `tie_word_embeddings` 때문인지, untied 대조군을 두고 확인합니다.
+2차 실험에서 상수 LR은 남은 BPB 격차를 줄였지만(회복률 72.42%) 격차는 남았고, tie를 끊은 대조군은 구별되지 않았습니다.
 
 ### 대표 작업
 
@@ -18,7 +18,7 @@ Qwen2.5-0.5B의 어휘 3만 개를 한국어 토큰으로 바꿨습니다. 같�
 
 - 원본(C0)·제거만(T2a)·치환(T2b) 세 조건을 같은 데이터와 같은 학습 일정으로 비교했습니다.
 - 토크나이저가 바뀌면 PPL로는 비교가 성립하지 않아 원문 바이트 기준 BPB로 판정했고, 조건별 노이즈 플로어의 2σ를 구별 기준으로 먼저 정했습니다.
-- 노름 보정과 Embedding Alignment 가설은 실험으로 반증했습니다. 새 토큰 노출을 4.4배 늘려도 회복률은 65.4%에서 65.9%로 거의 그대로였습니다.
+- 노름 보정과 Embedding Alignment 가설은 실험으로 반증했습니다. 새 토큰 노출을 4.4배 늘려도 회복률은 65.4%에서 65.9%로 거의 그대로였습니다(회복률 = 수술로 벌어진 BPB 격차 중 CPT가 메운 비율, 코사인 LR 조건).
 - 근거: [`results_provenance.md`](https://github.com/jinsan02/kotokenlab/blob/main/docs/results_provenance.md)
 
 #### [AI Agent 행동 예측](https://github.com/jinsan02/2026-ai-sw-digital-competition-ai-track) — 제한된 자원에서의 팀 실험
