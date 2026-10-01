@@ -41,8 +41,8 @@ Qwen2.5-0.5B의 어휘 3만 개를 한국어 토큰으로 바꿨습니다. 같�
 
 - **[AI Door](https://github.com/jinsan02/2026_Korea_Japan_Bridge_ideathon)** — 고령자용 한·일 공공문서 안내 웹. 2박 3일 만에 [공개 URL](https://2026-korea-japan-bridge-ideathon.vercel.app)로 배포했고, 근거 없는 날짜·금액·연락처를 걸러내는 서버 안전 규칙 13종을 넣었습니다. 2026 한일 브릿지 아이디어톤 최우수상
 - **[LG AIMERS 9기](https://github.com/jinsan02/lg-aimers-9-hackathon)** — 투구 제구 성공 확률 예측. 누적 컬럼이 시즌마다 초기화되지 않는 통산값임을 찾아 차분한 것이 단일 최대 개선(+72.64)이었습니다. 상위 19.5%(212위/1,090팀)
-- **[LG AIMERS 8기](https://github.com/jinsan02/LG_Aimers_2026)** — EXAONE 4.0 1.2B calibration 데이터와 FP8·AWQ·GPTQ 비교, 최종 상위 19%
-- **[SafeWave](https://github.com/jinsan02/safewave-ai-ambient-monitoring)** — WiFi CSI·음향 기반 멀티모달 Edge AI 시스템. 관련 논문으로 한국디지털콘텐츠학회 대학생 논문경진대회 동상(공저)
+- **[LG AIMERS 8기](https://github.com/jinsan02/LG_Aimers_2026)** — EXAONE 4.0 1.2B calibration 데이터와 FP8·AWQ·GPTQ 비교, 최종 115위/628팀(상위 19%)
+- **[SafeWave](https://github.com/jinsan02/safewave-ai-ambient-monitoring)** — WiFi CSI·음향 기반 멀티모달 Edge AI 4인 캡스톤. 아키텍처 검토·팀원 모델 통합과 M5 판단 모듈을 맡았고, 관련 논문으로 한국디지털콘텐츠학회 대학생 논문경진대회 동상(공저)
 
 ### 이렇게 일합니다
 
